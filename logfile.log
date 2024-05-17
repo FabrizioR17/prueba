@@ -1,3 +1,17 @@
 [2024-05-16 22:56:45] [ INFO ] [OdontologoDaoH2:38] Odontólogo registrado correctamente: 
 Id: null - Numero_matricula: 12345 - Nombre: Juan - Apellido: Perez
 [2024-05-16 23:07:34] [ INFO ] [OdontologoDaoH2:36] Odontólogo registrado correctamente: null
+[2024-05-16 23:38:55] [ INFO ] [OdontologoDaoH2:38] Odontólogo registrado correctamente: 
+Id: 5 - Numero_matricula: 12345 - Nombre: Juan - Apellido: Perez
+[2024-05-17 00:00:12] [ INFO ] [OdontologoDaoEnMemoria:25] Odontólogo registrado correctamente: 
+Id: 2 - Numero_matricula: 1111 - Nombre: Juan - Apellido: Perez
+[2024-05-17 00:00:12] [ INFO ] [OdontologoDaoH2:38] Odontólogo registrado correctamente: 
+Id: 6 - Numero_matricula: 12345 - Nombre: Juan - Apellido: Perez
+[2024-05-17 00:00:12] [ INFO ] [OdontologoDaoEnMemoria:31] Lista de odontologos registrados actualmente: [
+Id: 1 - Numero_matricula: 1111 - Nombre: Juan - Apellido: Carballo]
+[2024-05-17 00:01:14] [ INFO ] [OdontologoDaoEnMemoria:25] Odontólogo registrado correctamente: 
+Id: 2 - Numero_matricula: 1111 - Nombre: Juan - Apellido: Perez
+[2024-05-17 00:01:14] [ INFO ] [OdontologoDaoH2:38] Odontólogo registrado correctamente: 
+Id: 3 - Numero_matricula: 12345 - Nombre: Juan - Apellido: Perez
+[2024-05-17 00:01:14] [ INFO ] [OdontologoDaoEnMemoria:31] Lista de odontologos registrados actualmente: [
+Id: 1 - Numero_matricula: 1111 - Nombre: Juan - Apellido: Carballo]

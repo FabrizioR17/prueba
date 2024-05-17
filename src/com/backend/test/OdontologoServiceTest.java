@@ -7,6 +7,7 @@ import com.backend.repository.impl.OdontologoDaoH2;
 import com.backend.service.impl.OdontologoService;
 import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -33,10 +34,18 @@ public class OdontologoServiceTest {
     }
 
     @Test
-    void deberiaRestirnarseUnaListaNoVaciaDeOdontologoEnMemoria(){
-        odontologoService = new OdontologoService(new OdontologoDaoEnMemoria(new ArrayList<Odontologo>()));
-        assertFalse(odontologoService.listarOdontologo().isEmpty());
+    void deberiaregistrarUnodontologoYDevolverElID() {
+        odontologoService = new OdontologoService(new OdontologoDaoEnMemoria());
+        Odontologo odontologoARegistrar = new Odontologo(1001, "Moon", "Amstrong");
+
+        Odontologo odontologoRegistrado = odontologoService.registrarOdontologo(odontologoARegistrar);
+        assertNotNull(odontologoRegistrado.getId());
     }
 
+    @Test
+    void deberiaRetornarUnaListaNoVaciaDeMemoria() {
+        odontologoService = new OdontologoService(new OdontologoDaoEnMemoria());
+        assertFalse(odontologoService.listarOdontologo().isEmpty());
+    }
 
 }

@@ -4,35 +4,32 @@ import com.backend.model.Odontologo;
 import com.backend.repository.IDao;
 import org.apache.log4j.Logger;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class OdontologoDaoEnMemoria implements IDao<Odontologo> {
-    private List<Odontologo> odontologoRepositorio;
+    private List<Odontologo> registroDeOdontologos= new ArrayList<>();
+
     private final Logger LOGGER = Logger.getLogger(OdontologoDaoEnMemoria.class);
 
-    public OdontologoDaoEnMemoria(List<Odontologo> odontologoRepositorio){
-        this.odontologoRepositorio = odontologoRepositorio;
+    public OdontologoDaoEnMemoria(){
+        Odontologo odontologo = new Odontologo(1L, 1111, "Juan", "Carballo");
+
+        registroDeOdontologos.add(odontologo);
     }
 
     @Override
     public Odontologo registrarOdontologo(Odontologo odontologo) {
-
-        try{
-
-        }catch(Exception e){
-
-        }finally{
-
-        };
-        odontologoRepositorio.add(odontologo);
-        LOGGER.info("Odontólogo registrado correctamente: " + odontologoRepositorio);
-        return odontologo;
+        Long id = Long.valueOf(registroDeOdontologos.size() + 1);
+        Odontologo odontologoParaRegistrar = new Odontologo(id, odontologo.getNumero_matricula(), odontologo.getNombre(), odontologo.getApellido());
+        LOGGER.info("Odontólogo registrado correctamente: " + odontologoParaRegistrar);
+        return odontologoParaRegistrar;
     }
 
     @Override
     public List<Odontologo> listarOdontologo() {
-        LOGGER.info("Lista de odontologos registrados actualmente: " + odontologoRepositorio);
+        LOGGER.info("Lista de odontologos registrados actualmente: " + registroDeOdontologos);
 
-        return odontologoRepositorio;
+        return registroDeOdontologos;
     }
 }
