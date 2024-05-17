@@ -15,11 +15,11 @@ public class OdontologoService implements IOdontologoService {
 
     @Override
     public Odontologo registrarOdontologo(Odontologo odontologo) {
-        return null;
+        return odontologoIDao.registrarOdontologo(odontologo);
     }
 
     @Override
     public List<Odontologo> listarOdontologo() {
-        return List.of();
+        return odontologoIDao.listarOdontologo();
     }
 }
