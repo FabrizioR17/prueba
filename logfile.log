@@ -1,3 +1,24 @@
 [2024-05-16 22:56:45] [ INFO ] [OdontologoDaoH2:38] Odontólogo registrado correctamente: 
 Id: null - Numero_matricula: 12345 - Nombre: Juan - Apellido: Perez
 [2024-05-16 23:07:34] [ INFO ] [OdontologoDaoH2:36] Odontólogo registrado correctamente: null
+[2024-05-16 21:11:44] [ ERROR] [OdontologoDaoH2:40] Error al intentar registrar el odontólogo: Table "ODONTOLOGOS" not found (this database is empty); SQL statement:
+INSERT INTO ODONTOLOGOS (NUMERO_MATRICULA,NOMBRE, APELLIDO) VALUES (?, ?, ?) [42104-224]
+[2024-05-16 21:11:44] [ INFO ] [OdontologoDaoH2:44] Tuvimos un problema
+[2024-05-16 21:11:44] [ ERROR] [OdontologoDaoH2:45] Table "ODONTOLOGOS" not found (this database is empty); SQL statement:
+INSERT INTO ODONTOLOGOS (NUMERO_MATRICULA,NOMBRE, APELLIDO) VALUES (?, ?, ?) [42104-224]
+[2024-05-16 21:11:44] [ ERROR] [OdontologoDaoH2:83] Error al listar los odontólogos: Table "ODONTOLOGOS" not found (this database is empty); SQL statement:
+SELECT * FROM ODONTOLOGOS [42104-224]
+[2024-05-16 21:12:46] [ INFO ] [OdontologoDaoH2:38] Odontólogo registrado correctamente: 
+Id: null - Numero_matricula: 12345 - Nombre: Juan - Apellido: Perez
+[2024-05-16 21:13:49] [ INFO ] [OdontologoDaoH2:38] Odontólogo registrado correctamente: 
+Id: null - Numero_matricula: 12345 - Nombre: Juan - Apellido: Perez
+[2024-05-16 21:17:12] [ INFO ] [OdontologoDaoH2:38] Odontólogo registrado correctamente: 
+Id: null - Numero_matricula: 12345 - Nombre: Juan - Apellido: Perez
+[2024-05-16 21:19:45] [ INFO ] [OdontologoDaoH2:38] Odontólogo registrado correctamente: 
+Id: null - Numero_matricula: 12345 - Nombre: Juan - Apellido: Perez
+[2024-05-16 21:25:40] [ INFO ] [OdontologoDaoH2:38] Odontólogo registrado correctamente: 
+Id: null - Numero_matricula: 12345 - Nombre: Juan - Apellido: Perez
+[2024-05-16 21:30:49] [ ERROR] [OdontologoDaoH2:40] Error al intentar registrar el odontólogo: La base de datos puede que ya esté siendo utilizada: "C:/Users/fabri/Rodriguez-Fabrizio-Gadea-Fabio.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/fabri/Rodriguez-Fabrizio-Gadea-Fabio.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-16 21:31:12] [ INFO ] [OdontologoDaoH2:38] Odontólogo registrado correctamente: 
+Id: 8 - Numero_matricula: 12345 - Nombre: Juan - Apellido: Perez

@@ -25,11 +25,11 @@ public class OdontologoServiceTest {
     void deberiaRegistrarseUnOdontologoYObtenerElIdCorrespondiente() {
         odontologoService = new OdontologoService(new OdontologoDaoH2());
 
-        Odontologo odontologo = new Odontologo(12345, "Juan", "Perez");
+        Odontologo odontologoRegistrado = new Odontologo(12345, "Juan", "Perez");
 
-        Odontologo odontologoRegistrado = odontologoService.registrarOdontologo(odontologo);
+        Odontologo odontoloRegistrado = odontologoService.registrarOdontologo(odontologoRegistrado);
 
-        assertNotNull(odontologoRegistrado.getId());
+        assertNotNull(odontoloRegistrado.getId());
     }
 
     @Test
@@ -37,7 +37,6 @@ public class OdontologoServiceTest {
         odontologoService = new OdontologoService(new OdontologoDaoEnMemoria(new ArrayList<Odontologo>()));
         assertFalse(odontologoService.listarOdontologo().isEmpty());
     }
-
 
 
 }
