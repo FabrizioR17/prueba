@@ -1,4 +1,4 @@
 package com.backend.repository.impl;
 
-public class NombreDaoEnMemoria {
+public class OdontologoDaoH2 {
 }
