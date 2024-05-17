@@ -26,7 +26,7 @@ public class OdontologoServiceTest {
     void deberiaRegistrarseUnOdontologoYObtenerElIdCorrespondiente() {
         odontologoService = new OdontologoService(new OdontologoDaoH2());
 
-        Odontologo odontologoRegistrado = new Odontologo(12345, "Juan", "Perez");
+        Odontologo odontologoRegistrado = new Odontologo(105, "Margarita", "Pochelo");
 
         Odontologo odontoloRegistrado = odontologoService.registrarOdontologo(odontologoRegistrado);
 
@@ -36,7 +36,7 @@ public class OdontologoServiceTest {
     @Test
     void deberiaregistrarUnodontologoYDevolverElID() {
         odontologoService = new OdontologoService(new OdontologoDaoEnMemoria());
-        Odontologo odontologoARegistrar = new Odontologo(1001, "Moon", "Amstrong");
+        Odontologo odontologoARegistrar = new Odontologo(101, "Moon", "Amstrong");
 
         Odontologo odontologoRegistrado = odontologoService.registrarOdontologo(odontologoARegistrar);
         assertNotNull(odontologoRegistrado.getId());

@@ -15,3 +15,36 @@ Id: 2 - Numero_matricula: 1111 - Nombre: Juan - Apellido: Perez
 Id: 3 - Numero_matricula: 12345 - Nombre: Juan - Apellido: Perez
 [2024-05-17 00:01:14] [ INFO ] [OdontologoDaoEnMemoria:31] Lista de odontologos registrados actualmente: [
 Id: 1 - Numero_matricula: 1111 - Nombre: Juan - Apellido: Carballo]
+[2024-05-17 00:24:10] [ INFO ] [OdontologoDaoH2:88] Listado de todos los odontologos: [
+Id: 1 - Numero_matricula: 100 - Nombre: Pedrito - Apellido: Balasa, 
+Id: 2 - Numero_matricula: 101 - Nombre: Sofia - Apellido: Pedrousa]
+[2024-05-17 00:24:29] [ INFO ] [OdontologoDaoEnMemoria:25] Odontólogo registrado correctamente: 
+Id: 2 - Numero_matricula: 1001 - Nombre: Moon - Apellido: Amstrong
+[2024-05-17 00:24:29] [ INFO ] [OdontologoDaoH2:38] Odontólogo registrado correctamente: 
+Id: 3 - Numero_matricula: 12345 - Nombre: Juan - Apellido: Perez
+[2024-05-17 00:24:29] [ INFO ] [OdontologoDaoEnMemoria:31] Lista de odontologos registrados actualmente: [
+Id: 1 - Numero_matricula: 1111 - Nombre: Juan - Apellido: Carballo]
+[2024-05-17 00:24:29] [ INFO ] [OdontologoDaoH2:88] Listado de todos los odontologos: [
+Id: 1 - Numero_matricula: 100 - Nombre: Pedrito - Apellido: Balasa, 
+Id: 2 - Numero_matricula: 101 - Nombre: Sofia - Apellido: Pedrousa, 
+Id: 3 - Numero_matricula: 12345 - Nombre: Juan - Apellido: Perez]
+[2024-05-17 00:26:08] [ INFO ] [OdontologoDaoEnMemoria:26] Odontólogo registrado correctamente: 
+Id: 3 - Numero_matricula: 1001 - Nombre: Moon - Apellido: Amstrong
+[2024-05-17 00:26:08] [ INFO ] [OdontologoDaoH2:38] Odontólogo registrado correctamente: 
+Id: 4 - Numero_matricula: 12345 - Nombre: Juan - Apellido: Perez
+[2024-05-17 00:26:08] [ INFO ] [OdontologoDaoEnMemoria:32] Lista de odontologos registrados actualmente: [
+Id: 1 - Numero_matricula: 1111 - Nombre: Juan - Apellido: Carballo, 
+Id: 2 - Numero_matricula: 1112 - Nombre: Pasa - Apellido: Oliva]
+[2024-05-17 00:26:08] [ INFO ] [OdontologoDaoH2:88] Listado de todos los odontologos: [
+Id: 1 - Numero_matricula: 100 - Nombre: Pedrito - Apellido: Balasa, 
+Id: 2 - Numero_matricula: 101 - Nombre: Sofia - Apellido: Pedrousa, 
+Id: 3 - Numero_matricula: 12345 - Nombre: Juan - Apellido: Perez, 
+Id: 4 - Numero_matricula: 12345 - Nombre: Juan - Apellido: Perez]
+[2024-05-17 00:28:09] [ INFO ] [OdontologoDaoH2:38] Odontólogo registrado correctamente: 
+Id: 5 - Numero_matricula: 12345 - Nombre: Juan - Apellido: Perez
+[2024-05-17 00:28:17] [ INFO ] [OdontologoDaoH2:88] Listado de todos los odontologos: [
+Id: 1 - Numero_matricula: 100 - Nombre: Pedrito - Apellido: Balasa, 
+Id: 2 - Numero_matricula: 101 - Nombre: Sofia - Apellido: Pedrousa, 
+Id: 3 - Numero_matricula: 12345 - Nombre: Juan - Apellido: Perez, 
+Id: 4 - Numero_matricula: 12345 - Nombre: Juan - Apellido: Perez, 
+Id: 5 - Numero_matricula: 12345 - Nombre: Juan - Apellido: Perez]

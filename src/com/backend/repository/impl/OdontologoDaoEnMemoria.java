@@ -13,9 +13,10 @@ public class OdontologoDaoEnMemoria implements IDao<Odontologo> {
     private final Logger LOGGER = Logger.getLogger(OdontologoDaoEnMemoria.class);
 
     public OdontologoDaoEnMemoria(){
-        Odontologo odontologo = new Odontologo(1L, 1111, "Juan", "Carballo");
-
+        Odontologo odontologo = new Odontologo(1L, 115, "Juan", "Carballo");
+        Odontologo odontologo2 = new Odontologo(2L, 119, "Pasa", "Oliva");
         registroDeOdontologos.add(odontologo);
+        registroDeOdontologos.add(odontologo2);
     }
 
     @Override

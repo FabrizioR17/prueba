@@ -70,13 +70,7 @@ public class OdontologoDaoH2 implements IDao<Odontologo> {
             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM ODONTOLOGOS");
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                Odontologo odontologo = new Odontologo(
-                        resultSet.getLong("id"),
-                        resultSet.getInt("NUMERO_MATRICULA"),
-                        resultSet.getString("NOMBRE"),
-                        resultSet.getString("APELLIDO")
-
-                );
+                Odontologo odontologo = new Odontologo(resultSet.getLong("id"), resultSet.getInt("NUMERO_MATRICULA"), resultSet.getString("NOMBRE"), resultSet.getString("APELLIDO"));
                 odontologos.add(odontologo);
             }
         } catch (Exception e) {
@@ -91,6 +85,7 @@ public class OdontologoDaoH2 implements IDao<Odontologo> {
                 LOGGER.error("Error al cerrar la conexión: " + ex.getMessage());
             }
         }
+        LOGGER.info("Listado de todos los odontologos: " + odontologos);
         return odontologos;
     }
 }
