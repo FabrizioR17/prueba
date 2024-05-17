@@ -6,8 +6,7 @@ import com.backend.repository.impl.OdontologoDaoEnMemoria;
 import com.backend.repository.impl.OdontologoDaoH2;
 import com.backend.service.impl.OdontologoService;
 import org.junit.jupiter.api.Test;
-import java.util.ArrayList;
-import java.util.List;
+
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
