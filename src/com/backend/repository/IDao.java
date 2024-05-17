@@ -1,7 +1,10 @@
 package com.backend.repository;
 
-public interface IDao {
-    T nombreMetodoRegistrarPorEjemplo(T t);
+import java.util.List;
 
-    T MetodoParaBuscarAlgoEnBDPuedeSerId(Long id);
+public interface IDao<T> {
+
+    public T registrarOdontologo(T t);
+    public List<T> listarOdontogo();
+
 }
