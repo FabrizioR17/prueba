@@ -1,4 +1,9 @@
 package com.backend.repository.impl;
 
-public class OdontologoDaoEnMemoria {
+import com.backend.repository.IDao;
+
+public class OdontologoDaoEnMemoria implements IDao<> {
+
+
+
 }

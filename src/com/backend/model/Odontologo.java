@@ -1,19 +1,19 @@
 package com.backend.model;
 
-public class odontologo {
+public class Odontologo {
     private Long id;
     private int numero_matricula;
     private String nombre;
     private String apellido;
 
-    public odontologo(Long id, int numero_matricula, String nombre, String apellido) {
+    public Odontologo(Long id, int numero_matricula, String nombre, String apellido) {
         this.id = id;
         this.numero_matricula = numero_matricula;
         this.nombre = nombre;
         this.apellido = apellido;
     }
 
-    public odontologo(int numero_matricula, String nombre, String apellido) {
+    public Odontologo(int numero_matricula, String nombre, String apellido) {
         this.numero_matricula = numero_matricula;
         this.nombre = nombre;
         this.apellido = apellido;
