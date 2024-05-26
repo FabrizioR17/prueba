@@ -11,4 +11,6 @@ public interface IDao<T> {
     public T buscarPorId(Long id);
     public List<T> listarTodos();
 
+
+
 }
