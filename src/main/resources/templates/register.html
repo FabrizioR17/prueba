@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="../static/css/stylesregister.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="index.html"><img src="../static/img/logo.png" alt="Logo de la clínica"></a>
+    </div>
+</header>
+
+<main>
+    <h1><a href="login.html" id="myLinkinicio">Iniciar Sesión</a> / <a href="register.html" id="myLinkregistro">Registrarse</a></h1>
+    <form id="registro-form">
+        <label for="tipo-doc-reg">Tipo de Persona:</label>
+        <select id="tipo-doc-reg" onchange="toggleFields()">
+            <option value="Paciente" selected>Paciente</option>
+            <option value="Odontologo">Odontólogo</option>
+        </select>
+        <label for="num-doc-reg">Número de Documento:</label>
+        <input type="number" id="num-doc-reg" required>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" minlength="2" required>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" minlength="2" required>
+        <label id="label-domicilio" for="domicilio">Domicilio:</label>
+        <input type="text" id="domicilio" required>
+        <button onclick="registrar()">Registrarse</button>
+    </form>
+</main>
+
+<footer>
+    <!-- Contenido del footer -->
+</footer>
+
+<script src="../static/js/register.js"></script>
+<script>
+    function toggleFields() {
+        var tipoDoc = document.getElementById("tipo-doc-reg").value;
+        var domicilioField = document.getElementById("domicilio");
+        var domicilioLabel = document.getElementById("label-domicilio");
+        var numDocLabel = document.querySelector('label[for="num-doc-reg"]');
+
+        if (tipoDoc === "Odontologo") {
+            domicilioField.style.display = "none";
+            domicilioLabel.style.display = "none";
+            numDocLabel.textContent = "Número de Matrícula:";
+        } else {
+            domicilioField.style.display = "block";
+            domicilioLabel.style.display = "block";
+            numDocLabel.textContent = "Número de Documento:";
+        }
+    }
+</script>
+</body>
+</html>
